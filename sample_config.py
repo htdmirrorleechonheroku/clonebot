@@ -24,7 +24,7 @@ class Config(object):
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
     # Generate a user session string
-    TG_USER_SESSION = os.environ.get("TG_USER_SESSION", "")
+    SESSION = os.environ.get("SESSION", "")
 
     # Database URI
     DB_URI = os.environ.get("DATABASE_URL", "")
